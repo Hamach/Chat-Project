@@ -56,10 +56,10 @@ public class Chat {
             String timestamp;
             for (Object aJArray : jArray) {
                 jsonObject = (JSONObject) aJArray;
-                id = jsonObject.get("id").toString();
-                message = jsonObject.get("message").toString();
-                author = jsonObject.get("author").toString();
-                timestamp = jsonObject.get("timestamp").toString();
+                id = jsonObject.get(ID_FORMAT).toString();
+                message = jsonObject.get(MESSAGE_FORMAT).toString();
+                author = jsonObject.get(AUTHOR_FORMAT).toString();
+                timestamp = jsonObject.get(TIMESTAMP_FORMAT).toString();
                 addMessage(new Message(id, message, author, timestamp));
             }
         } catch (ParseException e) {

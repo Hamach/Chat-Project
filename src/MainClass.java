@@ -80,18 +80,22 @@ public class MainClass {
                     }
                     case 7: {
                         System.out.println("Enter start of period");
+                        System.out.println("Enter day:");
+                        int dayStart = sc.nextInt();
                         System.out.println("Enter number of month:");
                         int monthStart = sc1.nextInt();
                         System.out.println("Enter year:");
                         int yearStart = sc.nextInt();
-                        Calendar calendarStart = new GregorianCalendar(yearStart, monthStart, 0);
+                        Calendar calendarStart = new GregorianCalendar(yearStart, monthStart - 1, dayStart);
                         Date startDate = calendarStart.getTime();
                         System.out.println("Enter end of period:");
+                        System.out.println("Enter day:");
+                        int dayEnd = sc.nextInt();
                         System.out.println("Enter number of month:");
                         int monthEnd = sc1.nextInt();
                         System.out.println("Enter year:");
                         int yearEnd = sc.nextInt();
-                        Calendar calendarEnd = new GregorianCalendar(yearEnd, monthEnd, 0);
+                        Calendar calendarEnd = new GregorianCalendar(yearEnd, monthEnd - 1, dayEnd);
                         Date endDate = calendarEnd.getTime();
                         System.out.println(A.messagesFromTimeInterval(startDate, endDate).showMessages());
                         System.out.println("Choose operation:");
