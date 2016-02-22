@@ -13,6 +13,10 @@ public class Chat {
     private int addedMessagesCount;
     private static final int MAX_MESSAGE_LENGTH = 140;
     private static final int MIN_AUTHOR_LENGTH = 3;
+    private static final String ID_FORMAT="id";
+    private static final String AUTHOR_FORMAT="author";
+    private static final String TIMESTAMP_FORMAT="timestamp";
+    private static final String MESSAGE_FORMAT="message";
 
     public Chat() {
         this.chat = new ArrayList<>();
@@ -64,16 +68,16 @@ public class Chat {
         }
     }
 
-    @Override
+    @SuppressWarnings("unchecked")
     public String toString() {
         JSONArray jsonArray = new JSONArray();
         JSONObject jsonObject;
         for (Message i : chat) {
             jsonObject = new JSONObject();
-            jsonObject.put("id", i.getId());
-            jsonObject.put("author", i.getAuthor());
-            jsonObject.put("timestamp", i.getTimestamp());
-            jsonObject.put("message", i.getMessage());
+            jsonObject.put(ID_FORMAT, i.getId());
+            jsonObject.put(AUTHOR_FORMAT, i.getAuthor());
+            jsonObject.put(TIMESTAMP_FORMAT, i.getTimestamp());
+            jsonObject.put(MESSAGE_FORMAT, i.getMessage());
             jsonArray.add(jsonObject);
         }
         return jsonArray.toString();
