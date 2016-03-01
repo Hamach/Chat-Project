@@ -24,9 +24,14 @@
 <main>
     <div class="chat">
             <form method="post">
-                <button id="EditButton" type="button" class="my-button marg"><i class="fa fa-pencil"></i> Edit</button>
-                <button id="ShowButton" type="button" class="my-button marg"> <i class="fa fa-list"></i> List</button>
-                <button id="DeleteButton" type="button" class="my-button marg "> <i class="fa fa-trash"></i> Delete</button>
+                <label for="mess" class="marg">
+                    <button id="EditButton" type="button" class="my-button marg"><i class="fa fa-pencil"></i></button>
+                    <button id="ShowButton" type="button" class="my-button marg"> <i class="fa fa-list"></i></button>
+                    <button id="DeleteButton" type="button" class="my-button marg "> <i class="fa fa-trash"></i></button>
+                    <button id="SearchButton" type="button" class="my-button marg "> <i class="fa fa-search"></i></button>
+                    <input id="mess" type="text" class="input marg" placeholder="Enter message" onclick=send()>
+                    <button id="addButton" type="submit" class="my-button-add marg"><i class="fa fa-envelope"></i></button>
+                </label>
                 <div class="users-box">
                     <ul class="users-style-text">
                         <li class="fa fa-user"> (Me)Ivan</li>
@@ -34,11 +39,6 @@
                         <li class="fa fa-user"> Anton</li>
                     </ul>
                 </div>
-                <label for="mess" class="marg">
-                    <input id="mess" type="text" class="input marg" placeholder="Enter message" onclick=send()>
-                    <button id="addButton" type="submit" class="my-button-add marg"><i class="fa fa-envelope"></i> Send</button>
-                </label>
-
             </form>
         <p></p>
         <div class="textbox">

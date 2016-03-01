@@ -1,26 +1,30 @@
-@media (max-width: 670px) {
-    .textbox {
-        width: 80%;
-    }
-
-    .my-button {
-        width: 27.3%;
-    }
-
-    .input {
-        width: 52%;
-    }
-
+@media (max-width: 960px){
     .users-box {
         display: none;
     }
 
     .my-button-add{
-        min-width: 27.3%;
+      width: auto;
+    }
+
+    .input{
+        width: 33%;
+    }
+
+    .my-button{
+        width: auto;
+    }
+
+    .input-user{
+        width: 120px;
+    }
+    .textbox{
+        width: 80%;
+        height: 75%;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .users-box {
         display: none;
     }
@@ -36,8 +40,7 @@
     }
 
     .my-button {
-        width: 100%;
-        text-align: center;
+        width: 23.8%;
     }
 
     .bubble {
@@ -53,16 +56,17 @@
     }
 
     .my-button-add {
-        width: 100%;
+        width: 24%;
+        min-width: 27.3%;
     }
 
     .textbox {
-        width: 94%;
-        height: 50%;
+        width: 93.5%;
+        height: 65%;
     }
 
     .input {
-        width: 94%;
+        width: 65.2%;
     }
 
 
