@@ -1,0 +1,76 @@
+@media (max-width: 670px) {
+    .textbox {
+        width: 80%;
+    }
+
+    .my-button {
+        width: 27.3%;
+    }
+
+    .input {
+        width: 52%;
+    }
+
+    .users-box {
+        display: none;
+    }
+
+    .my-button-add{
+        min-width: 27.3%;
+    }
+}
+
+@media (max-width: 450px) {
+    .users-box {
+        display: none;
+    }
+
+    .chat {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .my-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bubble {
+        width: 95%;
+    }
+
+    .bubble-you {
+        width: 95%;
+    }
+
+    .header-float {
+        left: 10%;
+    }
+
+    .my-button-add {
+        width: 100%;
+    }
+
+    .textbox {
+        width: 93%;
+        height: 50%;
+    }
+
+    .input {
+        width: 93%;
+    }
+
+
+    main {
+        height: 80%;
+    }
+
+    .footer-contetnt {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chat-ik</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/adaptivScreen.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+<body>
+<header class="header">
+    <a class="titlestyle-h1" href="homepage.html">My Chat</a>
+    <div class="header-float">
+        <form>
+            <span class="label label-success"><i></i> Online</span>
+            <input id="user" type="text" class="input-user" required placeholder="Enter name">
+            <button id="Logger" type="submit" class="my-button-log ">Log</button>
+        </form>
+    </div>
+</header>
+<main>
+    <div class="chat">
+        <div class="rules-bar">
+            <form method="post">
+                <button id="EditButton" type="button" class="my-button marg">Edit</button>
+                <button id="ShowButton" type="button" class="my-button marg">List</button>
+                <button id="DeleteButton" type="button" class="my-button marg">Delete</button>
+                <div class="users-box">
+                    <ul class="users-style-text">
+                        <li class="fa fa-user">(Me)Ivan</li>
+                        <br>
+                        <li class="fa fa-user">Anton</li>
+                    </ul>
+                </div>
+                <label for="mess" class="marg">
+                    <input id="mess" type="text" class="input marg" placeholder="Enter message" onclick=send()>
+                    <button id="addButton" type="submit" class="my-button-add marg">Send</button>
+                </label>
+
+            </form>
+        </div>
+        <p></p>
+        <div class="textbox">
+            <div class="message">
+                <h4 class="text-style-author">Anton, 21: 16: 12</h4>
+                <h3 class="bubble text-style"> Hi,Welcome to the Oracle Help Center. Whether you are new to Oracle or an
+                    advanced user, you can find useful information about our products and services, ranging from getting
+                    started guides to advanced features.</h3>
+            </div>
+            <div class="message">
+                <h4 class="text-style-author myText">You,21: 32: 15<br>
+                    Deleted 22: 17: 12</h4>
+                <h3 class="bubble-you text-style ">Hello</h3>
+            </div>
+            <div class="message">
+                <h4 class="text-style-author ">Anton, 22: 16: 12</h4>
+                <h3 class="bubble text-style">Ok? </h3>
+            </div>
+        </div>
+        </p>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer-content">
+        <span>&copyKuharenko Ivan, 2016</span>
+    </div>
+</footer>
+</body>
+</html>
