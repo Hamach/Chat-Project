@@ -30,6 +30,17 @@ html, body {
     color: #bbc4d5;
 }
 
+a:hover,
+a:focus{
+   color: #bbc4d5;
+   text-decoration: none;
+}
+
+a.titlestyle-h1:hover{
+    color:  #26282b;
+    text-decoration: none;
+}
+
 .text-style {
     font-family: 'Open Sans Bold';
     font-weight: normal;
@@ -94,7 +105,7 @@ html, body {
     padding: 4px 8px;
     font-size: 14px;
     line-height: 20px;
-    height: 75%;
+    height: 90%;
     border: 2px solid #060101;
     border-radius: 4px;
     font-family: 'Open Sans';
@@ -109,7 +120,7 @@ html, body {
     font-size: 14px;
     line-height: 20px;
     color: #bbc4d5;
-    width: 43.6%;
+    width: 61%;
     background-color: #26282b;
     border: 2px solid #151515;
     border-radius: 4px;
@@ -192,13 +203,6 @@ html, body {
     font-family: 'Open Sans Semibold';
 }
 
-.my-button:active {
-    color: rgb(51, 51, 51);
-    border: 1px solid rgb(204, 204, 204);
-    background: rgb(238, 238, 238) linear-gradient(rgb(238, 238, 238), rgba(187, 196, 213, 0.72));
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset;
-}
-
 .my-button-add:active {
     color: rgb(51, 51, 51);
     border: 1px solid rgb(204, 204, 204);
@@ -229,10 +233,6 @@ footer {
 
 .marg {
     margin-top: 10px;
-}
-
-main {
-    height: 58%;
 }
 
 .label-success {

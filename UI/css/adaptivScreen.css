@@ -4,27 +4,23 @@
     }
 
     .my-button-add{
-      width: auto;
+      width: 15%;
     }
 
     .input{
-        width: 33%;
-    }
-
-    .my-button{
-        width: auto;
+        width: 75%;
     }
 
     .input-user{
-        width: 120px;
+        width: 110px;
     }
     .textbox{
-        width: 80%;
-        height: 75%;
+        width: 90%;
+        height: 95%;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 420px) {
     .users-box {
         display: none;
     }
@@ -35,13 +31,6 @@
         height: 100%;
     }
 
-    .header{
-        display: none;
-    }
-
-    .my-button {
-        width: 23.8%;
-    }
 
     .bubble {
         width: 95%;
@@ -51,30 +40,24 @@
         width: 95%;
     }
 
-    .header-float {
-        left: 10%;
+    .titlestyle-h1{
+        display: none;
     }
 
     .my-button-add {
-        width: 24%;
-        min-width: 27.3%;
+        width: 26%;
     }
 
     .textbox {
         width: 93.5%;
-        height: 65%;
+        height: 75%;
     }
 
     .input {
-        width: 65.2%;
+        width: 66%;
     }
 
-
-    main {
-        height: 80%;
-    }
-
-    .footer-contetnt {
-        font-size: 15px;
+    .footer{
+        display: none;
     }
 }

@@ -21,14 +21,9 @@
         </form>
     </div>
 </header>
-<main>
     <div class="chat">
             <form method="post">
                 <label for="mess" class="marg">
-                    <button id="EditButton" type="button" class="my-button marg"><i class="fa fa-pencil"></i></button>
-                    <button id="ShowButton" type="button" class="my-button marg"> <i class="fa fa-list"></i></button>
-                    <button id="DeleteButton" type="button" class="my-button marg "> <i class="fa fa-trash"></i></button>
-                    <button id="SearchButton" type="button" class="my-button marg "> <i class="fa fa-search"></i></button>
                     <input id="mess" type="text" class="input marg" placeholder="Enter message" onclick=send()>
                     <button id="addButton" type="submit" class="my-button-add marg"><i class="fa fa-envelope"></i></button>
                 </label>
@@ -49,8 +44,10 @@
                     started guides to advanced features.</h3>
             </div>
             <div class="message">
-                <h4 class="text-style-author myText">You,21: 32: 15<br>
-                    <i class="fa fa-warning"></i> Deleted 22: 17: 12</h4>
+                <h4 class="text-style-author myText">You, 21: 32: 15
+                    <a href="#" title="Edit message"><i class="fa fa-pencil"></i></a>
+                    <a href="#" title="Remove message"><i class="fa fa-trash"></i></a>
+                </h4>
                 <h3 class="bubble-you text-style ">Hello</h3>
             </div>
             <div class="message">
@@ -60,7 +57,6 @@
         </div>
         </p>
     </div>
-</main>
 <footer class="footer">
     <div class="footer-content">
         <span>&copyKuharenko Ivan, 2016</span>
