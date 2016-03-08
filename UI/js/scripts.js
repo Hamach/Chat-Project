@@ -58,7 +58,7 @@ $(function () {
                 html: true,
                 showCancelButton: true,
                 closeOnConfirm: false,
-                animation: "slide-from-bottom"
+                animation: "pop"
             },
             function () {
                 var messageValue = $('#messageField').val();
