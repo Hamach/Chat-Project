@@ -18,6 +18,10 @@
         width: 90%;
         height: 95%;
     }
+
+    .chat{
+        height: 74%;
+    }
 }
 
 @media (max-width: 420px) {
@@ -28,7 +32,7 @@
     .chat {
         position: absolute;
         width: 90%;
-        height: 100%;
+        height: 74%;
     }
 
 
@@ -50,14 +54,10 @@
 
     .textbox {
         width: 93.5%;
-        height: 75%;
+        height: 90%;
     }
 
     .input {
         width: 66%;
-    }
-
-    .footer{
-        display: none;
     }
 }

@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Chat-ik</title>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/sweetalert.css">
         <link rel="stylesheet" href="css/adaptivScreen.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     </head>
@@ -14,53 +15,51 @@
 <header class="header">
     <a class="titlestyle-h1" href="homepage.html"><i class="fa fa-home"></i> My Chat</a>
     <div class="header-float">
-        <form>
+        <form id="user-form">
             <span class="label label-success"><i></i> Online</span>
             <input id="user" type="text" class="input-user" required placeholder="Enter name">
             <button id="Logger" type="submit" class="my-button-log ">Log</button>
         </form>
     </div>
 </header>
-    <div class="chat">
-            <form method="post">
-                <label for="mess" class="marg">
-                    <input id="mess" type="text" class="input marg" placeholder="Enter message" onclick=send()>
-                    <button id="addButton" type="submit" class="my-button-add marg"><i class="fa fa-envelope"></i></button>
-                </label>
-                <div class="users-box">
-                    <ul class="users-style-text">
-                        <li class="fa fa-user"> (Me)Ivan</li>
-                        <br>
-                        <li class="fa fa-user"> Anton</li>
-                    </ul>
-                </div>
-            </form>
-        <p></p>
-        <div class="textbox">
-            <div class="message">
-                <h4 class="text-style-author">Anton, 21: 16: 12</h4>
-                <h3 class="bubble text-style"> Hi,Welcome to the Oracle Help Center. Whether you are new to Oracle or an
-                    advanced user, you can find useful information about our products and services, ranging from getting
-                    started guides to advanced features.</h3>
-            </div>
-            <div class="message">
-                <h4 class="text-style-author myText">You, 21: 32: 15
-                    <a href="#" title="Edit message"><i class="fa fa-pencil"></i></a>
-                    <a href="#" title="Remove message"><i class="fa fa-trash"></i></a>
-                </h4>
-                <h3 class="bubble-you text-style ">Hello</h3>
-            </div>
-            <div class="message">
-                <h4 class="text-style-author ">Anton, 22: 16: 12</h4>
-                <h3 class="bubble text-style">Ok? </h3>
-            </div>
+<div class="chat">
+    <form id="message-form">
+        <input id="mess" type="text" class="input marg" required placeholder="Enter message">
+        <button type="submit" class="my-button-add marg"><i class="fa fa-envelope"></i></button>
+        <div class="users-box">
+            <ul class="users-style-text">
+                <li class="fa fa-user me"> <span id="me">User</span></li>
+                <br>
+                <li class="fa fa-user"> Anton</li>
+            </ul>
         </div>
-        </p>
+    </form>
+    <p></p>
+    <div class="textbox" id="textbox">
+        <div class="message">
+            <div class="text-style-author">Anton, 21: 16: 12</div>
+            <h3 class="bubble text-style"> Hi,Welcome to the Oracle Help Center. Whether you are new to Oracle or an
+                advanced user, you can find useful information about our products and services, ranging from getting
+                started guides to advanced features.</h3>
+        </div>
+        <div class="message">
+            <div class="text-style-author myText">User, 21: 32: 15
+                <a href="#" class="edit"  title="Edit message"><i class="fa fa-pencil"></i></a>
+                <a href="#" class="del" title="Remove message"><i class="fa fa-trash"></i></a>
+            </div>
+            <h3 class="bubble-you text-style ">Hello</h3>
+        </div>
+        <div class="message">
+            <div class="text-style-author ">Anton, 22: 16: 12</div>
+            <h3 class="bubble text-style">Ok? </h3>
+        </div>
     </div>
+</div>
 <footer class="footer">
-    <div class="footer-content">
-        <span>&copyKuharenko Ivan, 2016</span>
-    </div>
+    <div class="footer-content">&copyKuharenko Ivan, 2016</div>
 </footer>
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/sweetalert.min.js"></script>
 </body>
 </html>

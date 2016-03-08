@@ -23,6 +23,10 @@ html, body {
     padding: 5px;
 }
 
+.me{
+    color: #ffffff;
+}
+
 .text-style-author {
     font-family: 'Open Sans Bold';
     font-weight: normal;
@@ -89,7 +93,7 @@ a.titlestyle-h1:hover{
     line-height: 20px;
     margin-left: 10px;
     margin-top: 9px;
-    height: 45%;
+    height: 50%;
     border: 2px solid #060101;
     border-radius: 4px;
     font-family: 'Open Sans';
@@ -99,8 +103,9 @@ a.titlestyle-h1:hover{
 
 .textbox {
     display: inline-block;
-    width: 65%;
-    position: absolute;
+    width: 75%;
+    position: relative;
+    z-index: 7;
     color: #ffffff;
     padding: 4px 8px;
     font-size: 14px;
@@ -120,26 +125,11 @@ a.titlestyle-h1:hover{
     font-size: 14px;
     line-height: 20px;
     color: #bbc4d5;
-    width: 61%;
+    width: 71%;
     background-color: #26282b;
     border: 2px solid #151515;
     border-radius: 4px;
     font-family: 'Open Sans';
-}
-
-.my-button {
-    display: inline-block;
-    padding: 3px 13px;
-    font-size: 14px;
-    line-height: 20px;
-    color: #ffffff;
-    text-align: center;
-    cursor: pointer;
-    background-color: #805cb7;
-    border: 1px solid #764ab7;
-    border-radius: 4px;
-    font-family: 'Open Sans Semibold';
-    width: 4%;
 }
 
 .my-button-add {
@@ -203,6 +193,18 @@ a.titlestyle-h1:hover{
     font-family: 'Open Sans Semibold';
 }
 
+.del{
+
+}
+.edit{
+
+}
+
+
+.deleted{
+    opacity: 0.5;
+}
+
 .my-button-add:active {
     color: rgb(51, 51, 51);
     border: 1px solid rgb(204, 204, 204);
@@ -219,16 +221,12 @@ a.titlestyle-h1:hover{
 
 .footer-content {
     font-family: "Open Sans Bold";
-    margin: 45px auto;
     text-align: right;
-    line-height: 100px;
-    padding: 0 20px;
     color: #bbc4d5;
     font-size: 20px;
-}
-
-footer {
-    height: 15%;
+    margin: 0 0 0 10px;
+    position: relative;
+    z-index: 5;
 }
 
 .marg {
@@ -284,19 +282,19 @@ footer {
     content: '';
     position: absolute;
     border-style: solid;
-    border-width: 0 19px 7px;
+    border-width: 0 18px 6px;
     border-color: #E6E6FA transparent;
     display: block;
     width: 0;
     z-index: 1;
     top: -6px;
-    left: 75%;
+    left: 80%;
 }
 
 .footer {
-    position: fixed;
+    position:fixed;
     bottom: 0px;
-    right: 0px;
+    right: 5%;
     width: 100%;
     padding: 5px;
 }
