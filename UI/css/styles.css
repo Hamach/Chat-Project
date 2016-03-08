@@ -299,6 +299,20 @@ a.titlestyle-h1:hover{
     padding: 5px;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #26282b;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    -webkit-box-shadow: inset 10px 0 6px #805cb7;
+}
+
 
 
 
