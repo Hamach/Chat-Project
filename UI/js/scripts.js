@@ -24,8 +24,18 @@ function send() {
 function changeName(){
     var name=myText($('#user').val());
     $('#user').val("");
-    author=name;
-    $('#me').html(author);
+    if(name.length>24){
+        swal({
+            title: "Error! Long username ",
+            html: true,
+            animation: "pop",
+            type: "error"
+        })
+    }
+    else {
+        author = name;
+        $('#me').html(author);
+    }
 }
 
 $(function () {
@@ -64,7 +74,7 @@ $(function () {
                 var messageValue = $('#messageField').val();
                 if (messageValue === false) return false;
                 if (messageValue === "") {
-                    swal.showInputError("Write something please!");
+                    swal.showInputError("Empty message!");
                     return false;
                 }
                 if (messageValue === messageText) {

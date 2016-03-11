@@ -24,6 +24,12 @@
     }
 }
 
+@media(min-width: 961px){
+    #list{
+        display: none;
+    }
+}
+
 @media (max-width: 420px) {
     .users-box {
         display: none;
@@ -33,6 +39,10 @@
         position: absolute;
         width: 90%;
         height: 74%;
+    }
+
+    .input-user{
+        width: 80px;
     }
 
 

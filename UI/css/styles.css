@@ -66,7 +66,7 @@ a.titlestyle-h1:hover{
     position: absolute;
     float: right;
     top: 20px;
-    right: 20px;
+    right: 15px;
 }
 
 .input-user {
@@ -147,6 +147,20 @@ a.titlestyle-h1:hover{
     width: 4%;
 }
 
+.my-button-list {
+    display: inline-block;
+    padding: 3px 13px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    background-color: #805cb7;
+    border: 1px solid #764ab7;
+    border-radius: 4px;
+    font-family: 'Open Sans Semibold';
+}
+
 .bubble {
     position: relative;
     width: 60%;
@@ -193,12 +207,8 @@ a.titlestyle-h1:hover{
     font-family: 'Open Sans Semibold';
 }
 
-.del{
-
-}
-.edit{
-
-}
+.del{ }
+.edit{}
 
 
 .deleted{
@@ -213,6 +223,13 @@ a.titlestyle-h1:hover{
 }
 
 .my-button-log:active {
+    color: rgb(51, 51, 51);
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(238, 238, 238) linear-gradient(rgb(238, 238, 238), rgba(187, 196, 213, 0.72));
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset;
+}
+
+.my-button-list:active{
     color: rgb(51, 51, 51);
     border: 1px solid rgb(204, 204, 204);
     background: rgb(238, 238, 238) linear-gradient(rgb(238, 238, 238), rgba(187, 196, 213, 0.72));
@@ -238,7 +255,7 @@ a.titlestyle-h1:hover{
 }
 
 .label-danger {
-    background-color: red;
+    background-color: #ff6582;
 }
 
 .rules-bar{
