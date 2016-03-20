@@ -24,13 +24,19 @@
     }
 }
 
+@media(max-height: 479px){
+    .footer{
+        display:none ;
+    }
+}
+
 @media(min-width: 961px){
     #list{
         display: none;
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 388px) {
     .users-box {
         display: none;
     }
@@ -47,11 +53,11 @@
 
 
     .bubble {
-        width: 95%;
+        width: 75%;
     }
 
     .bubble-you {
-        width: 95%;
+        width: 75%;
     }
 
     .titlestyle-h1{

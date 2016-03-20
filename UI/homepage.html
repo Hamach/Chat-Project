@@ -16,7 +16,7 @@
     <a class="titlestyle-h1" href="homepage.html"><i class="fa fa-home"></i> My Chat</a>
     <div class="header-float">
         <form id="user-form">
-            <span class="label label-danger">Offline</span>
+            <span class="label label-danger"><i class="fa fa-signal"></i></span>
             <input id="user" type="text" class="input-user" required placeholder="Enter name">
             <button id="Logger" type="submit" class="my-button-log ">Log</button>
         </form>
@@ -28,7 +28,7 @@
         <button type="submit" class="my-button-add marg"><i class="fa fa-envelope"></i></button>
         <div class="users-box">
             <ul class="users-style-text">
-                <li class="fa fa-user me"> <span id="me">User</span></li>
+                <li class="fa fa-user me"><span id="me">User</span></li>
                 <br>
                 <li class="fa fa-user"> Anton</li>
             </ul>
@@ -36,28 +36,32 @@
     </form>
     <p></p>
     <div class="textbox" id="textbox">
-        <div class="message">
-            <div class="text-style-author">Anton, 21: 16: 12</div>
-            <h3 class="bubble text-style"> Hi,Welcome to the Oracle Help Center. Whether you are new to Oracle or an
-                advanced user, you can find useful information about our products and services, ranging from getting
-                started guides to advanced features.</h3>
-        </div>
-        <div class="message">
-            <div class="text-style-author myText">User, 21: 32: 15
-                <a href="#" class="edit"  title="Edit message"><i class="fa fa-pencil"></i></a>
-                <a href="#" class="del" title="Remove message"><i class="fa fa-trash"></i></a>
-            </div>
-            <h3 class="bubble-you text-style ">Hello</h3>
-        </div>
-        <div class="message">
-            <div class="text-style-author ">Anton, 22: 16: 12</div>
-            <h3 class="bubble text-style">Ok? </h3>
-        </div>
     </div>
 </div>
 <footer class="footer">
     <div class="footer-content">&copyKuharenko Ivan, 2016</div>
 </footer>
+
+<div style="display:none" id="my-message-template">
+    <div class="message" data-message-id="id">
+        <div class="text-style-author myText">
+            <span>Author, time</span>
+            <span>
+                <a href="#" class="edit" title="Edit message"><i class="fa fa-pencil"></i></a>
+                <a href="#" class="del" title="Remove message"><i class="fa fa-trash"></i></a>
+            </span>
+        </div>
+        <h3 class="bubble-you text-style ">Message</h3>
+    </div>
+</div>
+
+<div style="display: none" id="others-message-template">
+    <div class="message" data-message-id="id">
+        <div class="text-style-author">Author, time</div>
+        <h3 class="bubble text-style"> Message</h3>
+    </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/sweetalert.min.js"></script>

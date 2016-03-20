@@ -171,19 +171,6 @@ a.titlestyle-h1:hover{
     border-radius: 5px;
 }
 
-.bubble:after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 0 18px 6px;
-    border-color: #805cb7 transparent;
-    display: block;
-    width: 0;
-    z-index: 1;
-    top: -6px;
-    left: 18px;
-}
-
 .myText {
     text-align: right;
 }
@@ -209,11 +196,6 @@ a.titlestyle-h1:hover{
 
 .del{ }
 .edit{}
-
-
-.deleted{
-    opacity: 0.5;
-}
 
 .my-button-add:active {
     color: rgb(51, 51, 51);
@@ -293,19 +275,6 @@ a.titlestyle-h1:hover{
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-}
-
-.bubble-you:after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 0 18px 6px;
-    border-color: #E6E6FA transparent;
-    display: block;
-    width: 0;
-    z-index: 1;
-    top: -6px;
-    left: 80%;
 }
 
 .footer {
