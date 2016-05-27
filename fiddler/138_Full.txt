@@ -1,0 +1,12 @@
+POST http://localhost:999/chat?token=TN11EN HTTP/1.1
+Host: localhost:999
+Content-Length: 76
+
+{"id":"2", "author":"User2", "text":"What's up?", "timestamp":1459169330000}
+HTTP/1.1 200 OK
+Date: Tue, 19 Apr 2016 08:46:22 GMT
+Transfer-encoding: chunked
+Access-control-allow-origin: *
+
+0
+
