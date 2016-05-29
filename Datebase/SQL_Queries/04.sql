@@ -1,0 +1,1 @@
+SELECT * FROM chat.messages where text LIKE 'Hello%' and user_id = 3;
