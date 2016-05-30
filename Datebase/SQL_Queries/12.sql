@@ -1,0 +1,1 @@
+select users.name, count(*) AS count from messages join users on users.id = messages.user_id where date(date) = '2016-05-09' group by user_id
